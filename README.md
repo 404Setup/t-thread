@@ -6,7 +6,7 @@
 No need to install TLIB Base, need Java 17.
 
 ## Install
-Please use shadow to remap T2hread to your own path to avoid conflicts with other libraries/plugins using TProxy.
+Please use shadow to remap T2hread to your own path to avoid conflicts with other libraries/plugins using T2hread.
 
 `maven`
 
