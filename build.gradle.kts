@@ -5,11 +5,11 @@ plugins {
     idea
     signing
 
-    id("com.vanniktech.maven.publish") version "0.30.0"
+    id("com.vanniktech.maven.publish") version "0.31.0"
 }
 
 group = "one.tranic"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -77,14 +77,6 @@ mavenPublishing {
             connection.set("scm:git:git://github.com/404Setup/t-thread.git")
             developerConnection.set("scm:git:ssh://git@github.com/404Setup/t-thread.git")
         }
-
-        /*withXml {
-            val root = asNode()
-            val nodes = root["dependencies"] as NodeList
-            if (nodes.isNotEmpty()) {
-                root.remove(nodes.first() as Node)
-            }
-        }*/
     }
 
     publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)

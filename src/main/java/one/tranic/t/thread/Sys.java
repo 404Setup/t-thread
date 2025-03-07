@@ -37,22 +37,5 @@ public class Sys {
         return 44 + cachedJvmVersion;
     }
 
-    /**
-     * Checks whether a class with the specified fully qualified name exists in the classpath.
-     *
-     * @param className the fully qualified name of the class to check.
-     * @return {@code true} if the class exists; {@code false} otherwise.
-     */
-    public static boolean hasClass(String className) {
-        try {
-            Class.forName(className);
-            return true;
-        } catch (ClassNotFoundException e) {
-            return false;
-        }
-    }
-
     private static final int cachedJvmVersion = getCurrentJVMVersion();
-
-
 }
